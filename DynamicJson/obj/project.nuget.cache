@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ic66R16L5M821y2jAoSgGkeW/kap+/ZAeVfZR/ulgnWrYcPwsnCQRSOFYtmlWXKeSvGvc8o367FD0A0DyjdDgA==",
+  "success": true,
+  "projectFilePath": "/Users/andersjoberg/Repos/DotnetLab/DynamicJson/DynamicJson.csproj",
+  "expectedPackageFiles": [
+    "/Users/andersjoberg/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
