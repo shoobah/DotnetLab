@@ -34,12 +34,13 @@ var json2 = """
     }
     """;
 
-//function to read dynamic json
+//function to read dynamic json using Newtonsoft.Json
 static dynamic? NSReadJson(string json)
 {
     return JObject.Parse(json);
 }
 
+//function to read dynamic json using System.Text.Json
 static dynamic? TSReadJson(string json)
 {
     return JsonSerializer.Deserialize<ExpandoObject>(json);
@@ -47,6 +48,7 @@ static dynamic? TSReadJson(string json)
 
 var NSThing1 = NSReadJson(json1);
 var NSThing2 = NSReadJson(json2);
+
 var TSThing1 = TSReadJson(json1);
 var TSThing2 = TSReadJson(json2);
 
