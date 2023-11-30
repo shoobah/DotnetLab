@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System.Dynamic;
+﻿using System.Dynamic;
 using System.Text.Json;
 using Microsoft.CSharp.RuntimeBinder;
 using Newtonsoft.Json.Linq;
@@ -61,7 +59,7 @@ static int GetInt(dynamic? obj, string key)
     return (int)obj[key];
 }
 
-Console.WriteLine("----------------------- Newtonsoft --------------------");
+Console.WriteLine("=================== Newtonsoft ========================");
 Console.WriteLine("NSThing1 type: " + NSThing1?.GetType());
 Console.WriteLine("NSThing2 type: " + NSThing2?.GetType());
 Console.WriteLine("thing1 account: " + (NSThing1?.account ?? "No account found"));
@@ -77,8 +75,7 @@ Console.WriteLine("-------------------------------------------------------");
 Console.WriteLine("Cast to int version");
 Console.WriteLine($"thing1.account:{GetInt(NSThing1, "account")}");
 Console.WriteLine($"thing2.account:{GetInt(NSThing2, "account")}");
-
-Console.WriteLine("----------------------- System.Text -------------------");
+Console.WriteLine("=================== System.Text =======================");
 Console.WriteLine("NSThing2 type: " + TSThing1?.GetType());
 Console.WriteLine("NSThing2 type: " + TSThing2?.GetType());
 try
@@ -97,3 +94,4 @@ catch (RuntimeBinderException)
 {
     Console.WriteLine("thing2 account: no account");
 }
+Console.WriteLine("=======================================================");
